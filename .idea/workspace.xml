@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d4f63df-d885-4d7b-b4e2-0ceb58f223ba" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2dWgzk1rWehPkCVWAoSS007WhSz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build CipherShield.executor": "Run",
+    "Go 测试.CipherShield/adapters 中的 TestEncryptionAdapter.executor": "Run",
+    "Go 测试.CipherShield/certs 中的 TestGenerateCert.executor": "Run",
+    "Go 测试.CipherShield/encryption 中的 TestAESStrategy.executor": "Run",
+    "Go 测试.CipherShield/encryption 中的 TestRSAStrategy.executor": "Run",
+    "Go 测试.CipherShield/pkg/aes_x 中的 TestAesCBC.executor": "Run",
+    "Go 测试.CipherShield/strategy 中的 TestAESDecrypt.executor": "Run",
+    "Go 测试.CipherShield/strategy 中的 TestAESEncrypt.executor": "Run",
+    "Go 测试.cipher_test.go.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestDecryptionWithAES.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestEncryptionAlgorithmWithAES.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestEncryptionWithAES.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestAESAlgorithm.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestAESAlgorithmWithGCM.executor": "Run",
+    "Go 测试.go test CipherShield.executor": "Run",
+    "Go 测试.main_test.go.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/shibin/Workspace/go/CipherShield/algorithm/actuator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm/actuator" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pkg/aes_x" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/aes" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Doc" />
+      <recent name="$PROJECT_DIR$/pkg/aes_x" />
+      <recent name="$PROJECT_DIR$/pkg/aes-x/images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cipher_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="CipherShield" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/go-bineanshi/CipherShield" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/cipher_test.go" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 测试.cipher_test.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-e58f7cfedaf7-155fe4b6e3a0-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-233.14015.113" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CipherShield$github_com_go_bineanshi_CipherShield__TestEncryptionWithAES.out" NAME="github.com/go-bineanshi/CipherShield 中的 TestEncryptionWithAES 覆盖结果" MODIFIED="1710831174076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
