@@ -22,37 +22,52 @@ var (
 var ciphertext string
 var algor CipherShield.EncryptionAlgorithm
 
-func setup(actuatorName string) {
-	aesActuator, err := algorithm.NewAESAlgorithm([]byte(key), []byte(iv), algorithm.WithActuator(actuatorName))
+func newAESActuator(actuatorName string) {
+	aesActuator, err := algorithm.NewAESAlgorithm([]byte(key), []byte(iv), algorithm.WithAESActuator(actuatorName))
 	if err != nil {
 		panic(err)
 	}
 	algor = CipherShield.EncryptionAlgorithm{Strategy: aesActuator}
 }
 
-func TestMain(m *testing.M) {
+func TestAES(t *testing.T) {
 	actuatorName := "cbc"
-	log.Printf("\n算法模式: %s \nKEY:    %s \nIV:     %s\n", actuatorName, key, iv)
-	setup(actuatorName)
-	m.Run()
+	log.Printf("\n\t\t\t\t\t算法模式: %s \n\t\t\t\t\tKEY\t\t:    %s \n\t\t\t\t\tIV\t\t:     %s\n", actuatorName, key, iv)
+	newAESActuator(actuatorName)
+	Decryption(Encryption())
 }
 
-func TestEncryptionWithAES(t *testing.T) {
+func newRSAActuator() {
+	cert, _ := pkg.GenerateCert()
+	aesActuator := algorithm.NewRSAStrategy(cert)
+	log.Printf("\n\t\t\t\t\t算法模式: %s \n\t\t\t\t\tPrivateKEY\t\t:    %s \n\t\t\t\t\tPublicKey\t\t:     %s\n", "RSA", cert.GetPrivateKeyString(), cert.GetPublicKeyString())
+	algor = CipherShield.EncryptionAlgorithm{Strategy: aesActuator}
+}
+
+func TestRSA(t *testing.T) {
+
+	newRSAActuator()
+
+	Decryption(Encryption())
+}
+
+func Encryption() string {
 	plaintext := "hello world"
 	var err error
 	ciphertext, err = algor.Encrypt(plaintext)
 	if err != nil {
-		t.Errorf("Encryption failed: %v", err)
+		log.Fatalf("Encryption failed: %v", err)
 	}
 
-	t.Logf("密文：%s\n", ciphertext)
+	log.Printf("密文\t\t：%s\n", ciphertext)
+	return ciphertext
 }
 
-func TestDecryptionWithAES(t *testing.T) {
+func Decryption(ciphertext string) {
 	plaintext, err := algor.Decrypt(ciphertext)
 	if err != nil {
-		t.Errorf("Decryption failed: %v", err)
+		log.Fatalf("Decryption failed: %v", err)
 	}
 
-	t.Logf("明文：%s\n", plaintext)
+	log.Printf("明文\t\t：%s\n", plaintext)
 }

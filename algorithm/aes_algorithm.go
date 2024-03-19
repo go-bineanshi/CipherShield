@@ -35,7 +35,7 @@ type AESActuatorOptions struct {
 
 type AESActuatorOption func(*AESActuatorOptions)
 
-func WithActuator(actuatorName string) AESActuatorOption {
+func WithAESActuator(actuatorName string) AESActuatorOption {
 	return func(options *AESActuatorOptions) {
 		switch strings.ToUpper(actuatorName) {
 		case "ECB":
@@ -54,7 +54,7 @@ func WithActuator(actuatorName string) AESActuatorOption {
 	}
 }
 
-func WithAdditionalData(data []byte) AESActuatorOption {
+func WithAESAdditionalData(data []byte) AESActuatorOption {
 	return func(options *AESActuatorOptions) {
 		options.additionalData = data
 	}

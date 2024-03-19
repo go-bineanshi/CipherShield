@@ -47,11 +47,15 @@
     "Go 测试.CipherShield/strategy 中的 TestAESDecrypt.executor": "Run",
     "Go 测试.CipherShield/strategy 中的 TestAESEncrypt.executor": "Run",
     "Go 测试.cipher_test.go.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestAES.executor": "Run",
     "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestDecryptionWithAES.executor": "Run",
     "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestEncryptionAlgorithmWithAES.executor": "Run",
     "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestEncryptionWithAES.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield 中的 TestRSA.executor": "Run",
     "Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestAESAlgorithm.executor": "Run",
     "Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestAESAlgorithmWithGCM.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestRSAStrategy.executor": "Run",
+    "Go 测试.github.com/go-bineanshi/CipherShield/pkg 中的 TestGenerateCert.executor": "Run",
     "Go 测试.go test CipherShield.executor": "Run",
     "Go 测试.main_test.go.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -82,7 +86,7 @@
       <recent name="$PROJECT_DIR$/pkg/aes-x/images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go 测试.github.com/go-bineanshi/CipherShield 中的 TestRSA">
     <configuration name="cipher_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="CipherShield" />
       <working_directory value="$PROJECT_DIR$" />
@@ -93,8 +97,65 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="github.com/go-bineanshi/CipherShield 中的 TestAES" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="CipherShield" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-bineanshi/CipherShield" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestAES\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="github.com/go-bineanshi/CipherShield 中的 TestRSA" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="CipherShield" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-bineanshi/CipherShield" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestRSA\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="github.com/go-bineanshi/CipherShield/algorithm 中的 TestRSAStrategy" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="CipherShield" />
+      <working_directory value="$PROJECT_DIR$/algorithm" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-bineanshi/CipherShield/algorithm" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestRSAStrategy\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="github.com/go-bineanshi/CipherShield/pkg 中的 TestGenerateCert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="CipherShield" />
+      <working_directory value="$PROJECT_DIR$/pkg" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-bineanshi/CipherShield/pkg" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGenerateCert\E$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield 中的 TestAES" />
+      <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield 中的 TestRSA" />
+      <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestRSAStrategy" />
+      <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield/pkg 中的 TestGenerateCert" />
+      <item itemvalue="Go 测试.cipher_test.go" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield 中的 TestRSA" />
+        <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield 中的 TestAES" />
+        <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield/algorithm 中的 TestRSAStrategy" />
+        <item itemvalue="Go 测试.github.com/go-bineanshi/CipherShield/pkg 中的 TestGenerateCert" />
         <item itemvalue="Go 测试.cipher_test.go" />
       </list>
     </recent_temporary>

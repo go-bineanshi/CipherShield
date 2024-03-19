@@ -12,7 +12,7 @@ import (
 func newAESAlgorithm(actuatorName string) *algorithm.AESAlgorithm {
 	key := pkg.RandStr(16)
 	iv := pkg.RandStr(16)
-	_aesAlgorithm, err := algorithm.NewAESAlgorithm([]byte(key), []byte(iv), algorithm.WithActuator(actuatorName))
+	_aesAlgorithm, err := algorithm.NewAESAlgorithm([]byte(key), []byte(iv), algorithm.WithAESActuator(actuatorName))
 	if err != nil {
 		panic(err)
 	}
@@ -42,7 +42,7 @@ func TestAESAlgorithm(t *testing.T) {
 func newAESAlgorithmWithGCM(additionalData []byte) *algorithm.AESAlgorithm {
 	key := pkg.RandStr(16)
 	iv := pkg.RandStr(16)
-	_aesAlgorithm, err := algorithm.NewAESAlgorithm([]byte(key), []byte(iv), algorithm.WithActuator("gcm"), algorithm.WithAdditionalData(additionalData))
+	_aesAlgorithm, err := algorithm.NewAESAlgorithm([]byte(key), []byte(iv), algorithm.WithAESActuator("gcm"), algorithm.WithAESAdditionalData(additionalData))
 	if err != nil {
 		panic(err)
 	}
